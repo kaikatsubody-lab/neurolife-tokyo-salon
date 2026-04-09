@@ -1,0 +1,16 @@
+LP v3 Review Notes:
+
+1. HERO: Beautiful full-screen salon lounge photo background, text overlay clear
+2. COUNTDOWN: Compact sticky bar at top - much smaller, shows "締め切りまで" + 4 time units + deadline text. Working correctly (05 days, 23 hours, 22 min, 25 sec)
+3. STORY: Clean, readable text with proper spacing. Bold highlights visible.
+4. FLOATING CTA: Bottom bar with "4/15(水) 23:59まで" + "プランを見る" button - visible
+
+Need to check:
+- Gallery section
+- Location section
+- Plan cards with 3 CTAs (card lump, card installment, bank transfer)
+- Payment section (AMEX/Diners for lump, VISA/Master/JCB for installment)
+- FAQ (8 questions including new card brand Q)
+- Bank transfer modal
+- Final CTA with 3 buttons per plan
+- Mobile responsiveness

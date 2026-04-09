@@ -1,0 +1,12 @@
+LP Review Notes v2
+==================
+1. Hero section: Beautiful with salon lounge background, title, subtitle, period - GOOD
+2. Countdown: Sticky at top, shows 6 days remaining, dark gold theme - GOOD
+3. Story section: Clean text layout with quote box - GOOD
+4. Gallery: 4 images in a row, all loading correctly - GOOD
+5. Location section: Dark background, dragon vein content complete with highlight box - GOOD
+   - Now includes the missing "龍脈/龍穴" paragraph - FIXED
+   - Now includes "遠方からでも" paragraph - FIXED
+   - Now includes "このような理由から" paragraph - FIXED
+6. Floating CTA at bottom with "プランを見る" button - GOOD
+7. Need to check: Plan cards, comparison table, FAQ, closing, final CTA

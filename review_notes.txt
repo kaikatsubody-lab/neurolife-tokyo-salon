@@ -1,0 +1,16 @@
+LP Review Notes:
+- Hero section: Beautiful with salon lounge image, text clearly visible
+- Countdown timer: Working correctly, sticky at top, shows days/hours/min/sec
+- Story section: Clean layout, good readability
+- Gallery: 4 images displayed in a row, all salon photos visible
+- Location section: Dark background, good contrast
+- Special Session section: Clean card design
+- Membership Plans: Cards look good with benefits listed
+- CTA buttons visible: "一括払いで申し込む" and "分割払いで申し込む" for each plan
+- Diamond plan header needs "限定2名様" badge - confirmed visible
+- Platinum plan header shows correctly
+- Need to verify: Gold, Silver, FAQ, Payment, Closing, Final CTA sections
+- Floating CTA bar working at bottom
+
+Overall: Design is clean, professional, and the countdown creates urgency.
+The plan cards are well-structured with clear CTA buttons.

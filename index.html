@@ -1142,9 +1142,69 @@ footer {
   .plan-cta-row { flex-direction: row; }
   .final-cta-row { flex-direction: row; }
 }
+
+/* ===== EXPIRED OVERLAY ===== */
+.expired-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(20, 18, 14, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+}
+.expired-overlay.active {
+  display: flex;
+}
+.expired-overlay-content {
+  max-width: 600px;
+  color: #fff;
+}
+.expired-overlay-content .expired-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.expired-overlay-content h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  color: #e8d5a3;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.expired-overlay-content p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 2;
+  margin-bottom: 12px;
+}
+.expired-overlay-content .expired-thanks {
+  font-size: 0.9rem;
+  color: #c9a96e;
+  margin-top: 24px;
+  font-family: 'Noto Serif JP', serif;
+}
+@media (max-width: 480px) {
+  .expired-overlay-content h2 { font-size: 1.4rem; }
+  .expired-overlay-content p { font-size: 0.9rem; }
+}
 </style>
 </head>
 <body>
+
+<!-- ===== EXPIRED OVERLAY ===== -->
+<div class="expired-overlay" id="expiredOverlay">
+  <div class="expired-overlay-content">
+    <div class="expired-icon">&#x1F512;</div>
+    <h2>オープニングメンバーの<br>募集は終了いたしました</h2>
+    <p>たくさんのお申し込みをいただき、<br>誠にありがとうございました。</p>
+    <p>今後の情報につきましては、<br>公式LINEやメルマガにてお知らせいたします。</p>
+    <p class="expired-thanks">ニューロライフLab. 橋本美紀</p>
+  </div>
+</div>
 
 <!-- ===== HERO ===== -->
 <header class="hero">
@@ -1684,6 +1744,12 @@ function updateCountdown() {
 
   if (diff <= 0) {
     document.getElementById('countdown').innerHTML = '<p class="countdown-expired">受付は終了いたしました</p>';
+    // Show expired overlay
+    document.getElementById('expiredOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+    // Hide floating CTA
+    const floatingCta = document.getElementById('floatingCta');
+    if (floatingCta) floatingCta.style.display = 'none';
     return;
   }
 

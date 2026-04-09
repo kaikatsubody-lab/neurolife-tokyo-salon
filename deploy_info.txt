@@ -1,0 +1,6 @@
+Netlify Drop デプロイ情報
+========================
+URL: https://lucky-gingersnap-018d63.netlify.app
+パスワード: My-Drop-Site
+注意: アカウントなしの場合、1時間で期限切れ
+→ 永久化するにはNetlifyアカウントが必要
