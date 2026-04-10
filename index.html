@@ -563,6 +563,64 @@ section { padding: 64px 0; }
   margin-right: 4px;
 }
 
+/* ===== SOLD OUT ===== */
+.plan-card.sold-out { position: relative; }
+.plan-card.sold-out .plan-header { opacity: 0.5; }
+.plan-card.sold-out .plan-body { opacity: 0.45; }
+.plan-card.sold-out .plan-cta { display: none; }
+.sold-out-banner {
+  background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.sold-out-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
+}
+.sold-out-banner span {
+  position: relative; z-index: 1;
+}
+.sold-out-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.sold-out-sub {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+/* Final CTA sold out */
+.final-plan-group.sold-out .final-plan-title { opacity: 0.5; }
+.final-plan-group.sold-out .final-plan-price { opacity: 0.5; }
+.final-plan-group.sold-out .final-cta-grid { display: none; }
+.final-sold-out-msg {
+  background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 8px;
+}
+
 /* ===== BANK MODAL ===== */
 .modal-overlay {
   display: none;
@@ -1328,8 +1386,9 @@ footer {
       （＊永久優待権は、大分・東京サロンの営業期間中のみ有効となります）
     </p>
 
-    <!-- ===== DIAMOND ===== -->
-    <div class="plan-card plan-diamond fade-in">
+    <!-- ===== DIAMOND (SOLD OUT) ===== -->
+    <div class="plan-card plan-diamond fade-in sold-out">
+      <div class="sold-out-banner"><span class="sold-out-badge">SOLD OUT</span><span>定員に達しました ― 募集終了</span><span class="sold-out-sub">たくさんのお申し込みありがとうございました</span></div>
       <div class="plan-header">
         <span class="plan-badge">限定 2名様</span>
         <h3 class="plan-name">&#x1f48e; ダイヤモンドメンバー</h3>
@@ -1650,7 +1709,7 @@ footer {
   <h2 class="serif">お申し込みはこちら</h2>
   <p class="deadline">受付期間：2026年4月15日（水）23:59まで</p>
 
-  <div class="final-plan-group">
+  <div class="final-plan-group sold-out">
     <p class="final-plan-title">&#x1f48e; ダイヤモンドメンバー</p>
     <p class="final-plan-price">680,000円（税込）｜限定2名様</p>
     <div class="final-cta-grid">
@@ -1660,6 +1719,7 @@ footer {
       </div>
       <button class="final-plan-btn final-btn-bank" onclick="openBankModal('diamond')"><span class="plan-label">銀行振込</span><span class="plan-action">お申し込み</span></button>
     </div>
+    <div class="final-sold-out-msg">定員に達しました ― 募集終了</div>
   </div>
 
   <div class="final-plan-group">
