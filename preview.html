@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【閲覧用】東京サロン・オープニングメンバーのご案内 | ニューロライフLab.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #3a3a3a;
+  line-height: 2;
+  background: #fdfbf7;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.serif { font-family: 'Noto Serif JP', serif; }
+.en-serif { font-family: 'Cormorant Garamond', serif; }
+h1, h2, h3 { font-family: 'Noto Serif JP', serif; }
+
+/* ===== UTILITY ===== */
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.text-center { text-align: center; }
+.fade-in {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh; min-height: 100svh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: #fff;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(30,25,20,0.65) 0%, rgba(30,25,20,0.35) 40%, rgba(30,25,20,0.75) 100%);
+  z-index: 2;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('images/salon-lounge.png') center center / cover no-repeat;
+  animation: heroZoom 20s ease-in-out infinite alternate;
+  z-index: 1;
+}
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.hero-content {
+  position: relative; z-index: 3;
+  padding: 32px 20px;
+  max-width: 800px;
+}
+.hero-sub {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+.hero h1 {
+  font-size: clamp(1.4rem, 5vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero-tagline {
+  font-size: clamp(0.88rem, 2.5vw, 1.15rem);
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 28px;
+  line-height: 1.8;
+}
+.hero-period {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.6);
+  padding: 8px 20px;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  backdrop-filter: blur(4px);
+  background: rgba(255,255,255,0.08);
+}
+.hero-scroll {
+  position: absolute; bottom: 24px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+.hero-scroll span {
+  display: block; width: 1px; height: 40px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 auto 6px;
+}
+.hero-scroll small {
+  font-size: 0.6rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.6);
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ===== COUNTDOWN (COMPACT) ===== */
+.countdown-section {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2318 100%);
+  padding: 10px 16px;
+  text-align: center;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.countdown-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.countdown-label {
+  color: #c9a96e;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+}
+.countdown-timer {
+  display: flex; justify-content: center; gap: 6px;
+}
+.countdown-unit {
+  background: rgba(201,169,110,0.1);
+  border: 1px solid rgba(201,169,110,0.3);
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-width: 42px;
+  text-align: center;
+}
+.countdown-unit .num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e8d5a3;
+  line-height: 1.2;
+}
+.countdown-unit .label {
+  font-size: 0.5rem;
+  letter-spacing: 0.15em;
+  color: #8a7a5a;
+}
+.countdown-expired {
+  color: #e8d5a3;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.countdown-deadline {
+  color: #8a7a5a;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+/* ===== SECTION COMMON ===== */
+section { padding: 64px 0; }
+@media (min-width: 768px) { section { padding: 100px 0; } }
+
+.section-title {
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #b09060;
+  letter-spacing: 0.15em;
+  margin-bottom: 40px;
+}
+.section-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: #c9a96e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.gold-line {
+  width: 36px; height: 1px;
+  background: #c9a96e;
+  margin: 0 auto 20px;
+}
+
+/* ===== STORY ===== */
+.story-section { background: #fdfbf7; }
+.story-text {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 0.92rem;
+  color: #555;
+}
+.story-text p { margin-bottom: 22px; }
+.story-text .highlight-name {
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.story-quote {
+  background: linear-gradient(135deg, #faf6ee 0%, #f5efe3 100%);
+  border-left: 3px solid #c9a96e;
+  padding: 24px 20px;
+  margin: 32px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+/* ===== GALLERY ===== */
+.gallery-section {
+  background: #f5efe3;
+  padding: 64px 0;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.5s ease;
+}
+.gallery-grid img:hover { transform: scale(1.03); }
+@media (min-width: 768px) {
+  .gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 0 24px; }
+  .gallery-grid img { height: 260px; }
+}
+
+/* ===== LOCATION ===== */
+.location-section {
+  background: linear-gradient(180deg, #1a1510 0%, #0f0d0a 100%);
+  color: #e8e0d0;
+  position: relative;
+  overflow: hidden;
+}
+.location-section::before {
+  content: '';
+  position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(ellipse at 30% 50%, rgba(201,169,110,0.06) 0%, transparent 60%);
+}
+.location-content {
+  position: relative; z-index: 1;
+  max-width: 680px; margin: 0 auto;
+}
+.location-content p {
+  font-size: 0.9rem;
+  line-height: 2.2;
+  color: #b0a890;
+  margin-bottom: 22px;
+}
+.location-highlight {
+  background: linear-gradient(135deg, rgba(201,169,110,0.12) 0%, rgba(201,169,110,0.05) 100%);
+  border: 1px solid rgba(201,169,110,0.2);
+  border-radius: 12px;
+  padding: 28px 20px;
+  margin-top: 32px;
+  text-align: center;
+}
+.location-highlight p {
+  color: #e8d5a3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 2;
+}
+.location-cta-text {
+  color: #b0a890;
+  font-size: 0.9rem;
+  line-height: 2.2;
+  margin-top: 28px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ===== SPECIAL SESSION ===== */
+.session-section { background: #fdfbf7; }
+.session-box {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 24px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.04);
+  border: 1px solid rgba(201,169,110,0.15);
+}
+.session-box p {
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 18px;
+}
+.session-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #c9a96e, #e8d5a3);
+  color: #1a1510;
+  padding: 5px 18px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+/* ===== MEMBERSHIP PLANS ===== */
+.plans-section {
+  background: linear-gradient(180deg, #f5efe3 0%, #fdfbf7 100%);
+}
+.plans-intro {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  text-align: center;
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 2;
+}
+.plans-intro strong { color: #3a3a3a; }
+.plans-note {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.8;
+}
+.plans-note strong { color: #b09060; }
+
+/* Plan Card */
+.plan-card {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+}
+
+/* Diamond */
+.plan-diamond .plan-header {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2318 50%, #1a1510 100%);
+  position: relative; overflow: hidden;
+}
+.plan-diamond .plan-header::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(201,169,110,0.15) 0%, transparent 50%, rgba(201,169,110,0.1) 100%);
+}
+.plan-diamond .plan-badge { background: linear-gradient(135deg, #d4af37, #f9f295, #d4af37); color: #1a1510; }
+
+/* Platinum */
+.plan-platinum .plan-header {
+  background: linear-gradient(135deg, #2a2a35 0%, #3a3a48 50%, #2a2a35 100%);
+}
+.plan-platinum .plan-badge { background: linear-gradient(135deg, #c0c0c0, #e8e8e8, #c0c0c0); color: #2a2a35; }
+
+/* Gold */
+.plan-gold .plan-header {
+  background: linear-gradient(135deg, #4a3520 0%, #5a4530 50%, #4a3520 100%);
+}
+.plan-gold .plan-badge { background: linear-gradient(135deg, #c9a96e, #e8d5a3, #c9a96e); color: #3a2a15; }
+
+/* Silver */
+.plan-silver .plan-header {
+  background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 50%, #4a4a4a 100%);
+}
+.plan-silver .plan-badge { background: linear-gradient(135deg, #a0a0a0, #d0d0d0, #a0a0a0); color: #3a3a3a; }
+
+.plan-header {
+  padding: 32px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.plan-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.plan-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+}
+.plan-price-main {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.plan-price-main small {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.plan-value {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+.plan-real-price {
+  display: inline-block;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f9f295;
+  border: 1px solid rgba(249,242,149,0.3);
+}
+
+.plan-body {
+  padding: 28px 20px;
+}
+.plan-benefits-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: #b09060;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.plan-benefits {
+  list-style: none;
+}
+.plan-benefits li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0ebe0;
+  font-size: 0.88rem;
+  line-height: 1.8;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.plan-benefits li:last-child { border-bottom: none; }
+.plan-benefits .check {
+  color: #c9a96e;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.plan-benefits .benefit-main { font-weight: 600; color: #3a3a3a; }
+.plan-benefits .benefit-sub {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 3px;
+  line-height: 1.6;
+}
+
+/* CTA Buttons - 3 buttons layout */
+.plan-cta {
+  padding: 8px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plan-cta-row {
+  display: flex;
+  gap: 10px;
+}
+.cta-btn {
+  flex: 1;
+  display: block;
+  text-align: center;
+  padding: 16px 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.cta-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  transition: width 0.6s ease, height 0.6s ease;
+  transform: translate(-50%, -50%);
+}
+.cta-btn:hover::after {
+  width: 300px; height: 300px;
+}
+.cta-btn-primary {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2318 100%);
+  color: #e8d5a3;
+  border: 2px solid #c9a96e;
+}
+.cta-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,169,110,0.3);
+}
+.cta-btn-secondary {
+  background: linear-gradient(135deg, #c9a96e 0%, #e8d5a3 100%);
+  color: #1a1510;
+  border: 2px solid #c9a96e;
+}
+.cta-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,169,110,0.4);
+}
+.cta-btn-bank {
+  background: #fff;
+  color: #3a3a3a;
+  border: 2px solid #c9a96e;
+}
+.cta-btn-bank:hover {
+  background: #faf6ee;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,169,110,0.2);
+}
+.cta-btn .cta-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 3px;
+  letter-spacing: 0.1em;
+}
+.cta-btn .cta-main {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.cta-btn .cta-icon {
+  font-size: 0.75rem;
+  margin-right: 4px;
+}
+
+/* ===== SOLD OUT ===== */
+.plan-card.sold-out { position: relative; }
+.plan-card.sold-out .plan-header { opacity: 0.5; }
+.plan-card.sold-out .plan-body { opacity: 0.45; }
+.plan-card.sold-out .plan-cta { display: none; }
+.sold-out-banner {
+  background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.sold-out-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
+}
+.sold-out-banner span {
+  position: relative; z-index: 1;
+}
+.sold-out-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.sold-out-sub {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+/* Final CTA sold out */
+.final-plan-group.sold-out .final-plan-title { opacity: 0.5; }
+.final-plan-group.sold-out .final-plan-price { opacity: 0.5; }
+.final-plan-group.sold-out .final-cta-grid { display: none; }
+.final-sold-out-msg {
+  background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 8px;
+}
+
+/* ===== BANK MODAL ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.modal-overlay.active { display: flex; }
+.modal-box {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  padding: 36px 28px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.modal-close:hover { background: #f0f0f0; }
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #3a3a3a;
+}
+.modal-plan-name {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #b09060;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.bank-info {
+  background: #faf6ee;
+  border-radius: 12px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+}
+.bank-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ede5d5;
+  font-size: 0.88rem;
+}
+.bank-info-row:last-child { border-bottom: none; }
+.bank-info-row .bank-label {
+  color: #888;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  min-width: 80px;
+}
+.bank-info-row .bank-value {
+  font-weight: 600;
+  color: #3a3a3a;
+  text-align: right;
+}
+.modal-amount {
+  text-align: center;
+  background: linear-gradient(135deg, #1a1510, #2a2318);
+  color: #e8d5a3;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.modal-amount .amount-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+}
+.modal-amount .amount-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.modal-note {
+  font-size: 0.75rem;
+  color: #999;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.comparison-section {
+  background: #fdfbf7;
+  padding: 64px 0;
+}
+.comparison-table-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 16px;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  min-width: 520px;
+}
+.comparison-table th, .comparison-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid #e8e0d0;
+  vertical-align: middle;
+}
+.comparison-table thead th {
+  background: linear-gradient(135deg, #1a1510, #2a2318);
+  color: #e8d5a3;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+.comparison-table thead th:first-child { border-radius: 8px 0 0 0; }
+.comparison-table thead th:last-child { border-radius: 0 8px 0 0; }
+.comparison-table tbody tr:nth-child(even) { background: #faf6ee; }
+.comparison-table tbody td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.comparison-table .check-mark {
+  color: #c9a96e;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+.comparison-table .dash { color: #ccc; }
+
+/* ===== PAYMENT INFO ===== */
+.payment-section { background: #fdfbf7; }
+.payment-box {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  border: 1px solid rgba(201,169,110,0.15);
+}
+.payment-methods {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.payment-methods li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0ebe0;
+  font-size: 0.88rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.payment-methods .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px;
+  background: #c9a96e;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.payment-note {
+  background: #faf6ee;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.9;
+}
+.payment-note strong { color: #b09060; }
+.payment-brands {
+  display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap;
+}
+.payment-brands span {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #555;
+}
+.payment-note-block {
+  background: #faf6ee;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.9;
+  margin-top: 16px;
+}
+.payment-note-block strong { color: #b09060; }
+
+/* ===== FAQ ===== */
+.faq-section { background: #f5efe3; }
+.faq-list {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  border: 1px solid rgba(201,169,110,0.1);
+}
+.faq-question {
+  padding: 16px 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+.faq-question:hover { background: #faf6ee; }
+.faq-question .q-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px;
+  background: linear-gradient(135deg, #c9a96e, #e8d5a3);
+  color: #1a1510;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+.faq-question .arrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+  color: #c9a96e;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.faq-item.open .faq-question .arrow { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding: 0 20px 20px 58px;
+}
+.faq-answer p {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 2;
+}
+
+/* ===== CLOSING ===== */
+.closing-section {
+  background: linear-gradient(180deg, #fdfbf7 0%, #f5efe3 100%);
+  text-align: center;
+}
+.closing-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.closing-content p {
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 22px;
+  line-height: 2.2;
+}
+.closing-highlight {
+  font-weight: 500;
+  color: #3a3a3a;
+  font-size: 1rem;
+  line-height: 2;
+  margin: 28px 0;
+}
+.closing-signature {
+  margin-top: 40px;
+}
+.closing-signature .name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  letter-spacing: 0.1em;
+}
+.closing-signature .role {
+  font-size: 0.75rem;
+  color: #b09060;
+  margin-top: 4px;
+}
+
+/* ===== FINAL CTA ===== */
+.final-cta-section {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2318 100%);
+  padding: 64px 20px;
+  text-align: center;
+  color: #e8d5a3;
+}
+.final-cta-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+.final-cta-section .deadline {
+  font-size: 0.78rem;
+  color: #8a7a5a;
+  margin-bottom: 40px;
+}
+.final-plan-group {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,169,110,0.2);
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+.final-plan-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 0.08em;
+  color: #e8d5a3;
+}
+.final-plan-price {
+  font-size: 0.78rem;
+  color: #8a7a5a;
+  margin-bottom: 14px;
+}
+.final-cta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.final-cta-row {
+  display: flex;
+  gap: 8px;
+}
+.final-plan-btn {
+  flex: 1;
+  display: block;
+  padding: 14px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.final-plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,169,110,0.3);
+}
+.final-plan-btn .plan-label {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 3px;
+}
+.final-plan-btn .plan-action {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+.final-btn-lump {
+  background: rgba(201,169,110,0.15);
+  border: 1px solid rgba(201,169,110,0.4);
+  color: #e8d5a3;
+}
+.final-btn-installment {
+  background: linear-gradient(135deg, #c9a96e, #e8d5a3);
+  color: #1a1510;
+}
+.final-btn-bank {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ccc;
+}
+.final-btn-bank:hover {
+  background: rgba(255,255,255,0.12);
+}
+.final-note {
+  max-width: 680px;
+  margin: 20px auto 0;
+  font-size: 0.72rem;
+  color: #6a5a3a;
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0f0d0a;
+  color: #5a5040;
+  text-align: center;
+  padding: 32px 20px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+}
+
+/* ===== FLOATING CTA ===== */
+.floating-cta {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(135deg, #1a1510 0%, #2a2318 100%);
+  padding: 10px 16px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
+.floating-cta.show { transform: translateY(0); }
+.floating-cta-text {
+  color: #e8d5a3;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.floating-cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #c9a96e, #e8d5a3);
+  color: #1a1510;
+  padding: 8px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: all 0.3s;
+  animation: ctaPulse 2s ease-in-out infinite;
+}
+.floating-cta-btn:hover {
+  box-shadow: 0 4px 16px rgba(201,169,110,0.4);
+}
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,169,110,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(201,169,110,0); }
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 768px) {
+  section { padding: 56px 0; }
+  .container { padding: 0 20px; }
+  .story-text { font-size: 0.95rem; line-height: 2.1; }
+  .story-text p { margin-bottom: 24px; }
+  .story-quote { font-size: 0.95rem; padding: 22px 18px; }
+  .location-text { font-size: 0.95rem; }
+  .location-highlight { font-size: 0.95rem; padding: 22px 18px; }
+  .session-text { font-size: 0.95rem; }
+  .section-title { font-size: clamp(1.2rem, 4vw, 1.6rem); }
+  .plan-benefits li { font-size: 0.9rem; }
+  .plan-benefits .benefit-sub { font-size: 0.78rem; }
+  .closing-content p { font-size: 0.95rem; }
+  .faq-question { font-size: 0.9rem; }
+  .faq-answer p { font-size: 0.85rem; }
+  .payment-methods li { font-size: 0.9rem; }
+  .payment-note { font-size: 0.82rem; }
+  .payment-note-block { font-size: 0.82rem; }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+  html { font-size: 16px; }
+  body { line-height: 2.1; }
+
+  /* Countdown */
+  .countdown-section { padding: 8px 12px; }
+  .countdown-inner { gap: 6px; }
+  .countdown-unit { min-width: 36px; padding: 3px 6px; }
+  .countdown-unit .num { font-size: 1rem; }
+  .countdown-unit .label { font-size: 0.42rem; }
+  .countdown-label { font-size: 0.58rem; }
+  .countdown-deadline { font-size: 0.52rem; }
+
+  /* Hero */
+  .hero h1 { font-size: 1.35rem; line-height: 1.8; }
+  .hero-tagline { font-size: 0.9rem; }
+  .hero-period { font-size: 0.72rem; padding: 8px 16px; }
+  .hero-sub { font-size: 0.68rem; }
+
+  /* Story */
+  .story-text { font-size: 0.95rem; line-height: 2.1; padding: 0 4px; }
+  .story-text p { margin-bottom: 22px; }
+  .story-quote { font-size: 0.95rem; padding: 20px 16px; line-height: 2.1; }
+
+  /* Gallery */
+  .gallery-grid img { height: 140px; }
+
+  /* Location */
+  .location-text { font-size: 0.95rem; line-height: 2.1; padding: 0 4px; }
+  .location-highlight { font-size: 0.95rem; padding: 20px 16px; line-height: 2.1; }
+
+  /* Session */
+  .session-text { font-size: 0.95rem; line-height: 2.1; padding: 0 4px; }
+
+  /* Section titles */
+  .section-title { font-size: 1.25rem; line-height: 1.8; }
+  .section-subtitle { font-size: 0.82rem; }
+
+  /* Plan cards */
+  .plan-header { padding: 24px 16px; }
+  .plan-body { padding: 24px 16px; }
+  .plan-cta { padding: 10px 16px 28px; }
+  .plan-price-main { font-size: 2.2rem; }
+  .plan-name { font-size: 1.2rem; }
+  .plan-benefits li { font-size: 0.9rem; line-height: 1.9; padding: 14px 0; }
+  .plan-benefits .benefit-main { font-size: 0.92rem; }
+  .plan-benefits .benefit-sub { font-size: 0.78rem; line-height: 1.7; }
+
+  /* CTA buttons - stack vertically on mobile */
+  .plan-cta-row { flex-direction: column; gap: 8px; }
+  .cta-btn { padding: 16px 12px; font-size: 0.95rem; }
+  .cta-btn .cta-label { font-size: 0.6rem; }
+  .cta-btn .cta-main { font-size: 0.95rem; }
+
+  /* Final CTA */
+  .final-plan-group { padding: 20px 16px; }
+  .final-cta-row { flex-direction: column; gap: 8px; }
+  .final-plan-btn { padding: 14px 12px; }
+  .final-plan-btn .plan-action { font-size: 0.92rem; }
+  .final-plan-btn .plan-label { font-size: 0.65rem; }
+  .final-plan-title { font-size: 1.05rem; }
+  .final-plan-price { font-size: 0.82rem; }
+
+  /* Modal */
+  .modal-box { padding: 28px 20px; }
+  .modal-amount .amount-value { font-size: 1.5rem; }
+  .bank-info-row { font-size: 0.9rem; }
+  .bank-info-row .bank-label { font-size: 0.82rem; }
+
+  /* Closing */
+  .closing-content p { font-size: 0.95rem; line-height: 2.2; }
+  .closing-highlight { font-size: 1rem; }
+
+  /* FAQ */
+  .faq-question { font-size: 0.9rem; padding: 16px 16px; }
+  .faq-answer p { font-size: 0.85rem; line-height: 2; }
+  .faq-item.open .faq-answer { padding: 0 16px 20px 48px; }
+
+  /* Payment */
+  .payment-methods li { font-size: 0.9rem; }
+  .payment-note { font-size: 0.82rem; }
+  .payment-note-block { font-size: 0.82rem; }
+
+  /* Comparison table */
+  .comparison-table { font-size: 0.72rem; }
+
+  /* Floating CTA */
+  .floating-cta { padding: 10px 14px; gap: 10px; }
+  .floating-cta-text { font-size: 0.7rem; }
+  .floating-cta-btn { font-size: 0.78rem; padding: 8px 20px; }
+}
+
+@media (min-width: 481px) {
+  .plan-cta-row { flex-direction: row; }
+  .final-cta-row { flex-direction: row; }
+}
+
+/* ===== EXPIRED OVERLAY ===== */
+.expired-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(20, 18, 14, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+}
+.expired-overlay.active {
+  display: flex;
+}
+.expired-overlay-content {
+  max-width: 600px;
+  color: #fff;
+}
+.expired-overlay-content .expired-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.expired-overlay-content h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  color: #e8d5a3;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.expired-overlay-content p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 2;
+  margin-bottom: 12px;
+}
+.expired-overlay-content .expired-thanks {
+  font-size: 0.9rem;
+  color: #c9a96e;
+  margin-top: 24px;
+  font-family: 'Noto Serif JP', serif;
+}
+@media (max-width: 480px) {
+  .expired-overlay-content h2 { font-size: 1.4rem; }
+  .expired-overlay-content p { font-size: 0.9rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== EXPIRED OVERLAY ===== -->
+<div class="expired-overlay" id="expiredOverlay">
+  <div class="expired-overlay-content">
+    <div class="expired-icon">&#x1F512;</div>
+    <h2>オープニングメンバーの<br>募集は終了いたしました</h2>
+    <p>たくさんのお申し込みをいただき、<br>誠にありがとうございました。</p>
+    <p>今後の情報につきましては、<br>Discordや、公式LINEにてお知らせいたします。</p>
+    <p class="expired-thanks">ニューロライフLab. 橋本美紀</p>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-sub en-serif">NEURO LIFE Lab. TOKYO SALON</p>
+    <h1>思考・感情・肉体を繋ぐ<br>「次世代ケア」の拠点へ。</h1>
+    <p class="hero-tagline">東京サロン・オープニングメンバーのご案内</p>
+    <div class="hero-period">
+      先行ご案内期間：4月10日(金) 10:00 〜 4月15日(水) 23:59
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span></span>
+    <small>SCROLL</small>
+  </div>
+</header>
+
+<!-- ===== COUNTDOWN (COMPACT STICKY) ===== -->
+<div class="countdown-section" id="countdownBar">
+  <div class="countdown-inner" id="countdown">
+    <span class="countdown-label">締め切りまで</span>
+    <div class="countdown-timer">
+      <div class="countdown-unit"><span class="num" id="cd-days">00</span><span class="label">DAYS</span></div>
+      <div class="countdown-unit"><span class="num" id="cd-hours">00</span><span class="label">HOURS</span></div>
+      <div class="countdown-unit"><span class="num" id="cd-min">00</span><span class="label">MIN</span></div>
+      <div class="countdown-unit"><span class="num" id="cd-sec">00</span><span class="label">SEC</span></div>
+    </div>
+    <span class="countdown-deadline">4/15(水) 23:59まで</span>
+  </div>
+</div>
+
+<!-- ===== STORY ===== -->
+<section class="story-section">
+  <div class="container">
+    <p class="section-en fade-in">OUR STORY</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">27年、5万人の方と<br>向き合って辿り着いた答え</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="story-text fade-in">
+      <p>いつも私の活動を温かく見守ってくださり、本当にありがとうございます。<span class="highlight-name">橋本美紀</span>です。</p>
+      <p>振り返れば2002年。大分初の本格リラクゼーションサロンをオープンしたことから、私の道は始まりました。</p>
+      <p>2004年には大分初のDAY SPA、2009年には英国国際ライセンスを取得できるアロマセラピスト養成アカデミー（本場イギリスの講座を日本語訳で受講できる）の日本校を運営。</p>
+      <p>そして2013年、「共に学んでくれた受講生の皆さんが活躍できる場所を」という願いから、AMANERESORT SEIKAI内にサロンをオープンしました。</p>
+      <p>常に<strong>「目の前の方の癒やし」</strong>と<strong>「共に歩む仲間の未来」</strong>を形にし続けてきた27年間。その中で、私自身の活動も少しずつ進化してきました。</p>
+      <p>2017年からは、Kaikatsubody-Lab.としてクローズドな形ではありましたが、講座や個別プログラムをスタート。</p>
+      <p>そして今年、これまでの集大成として立ち上げたのが<strong>「ニューロライフLab.」</strong>です。</p>
+      <div class="story-quote serif">
+        思考・感情・肉体を繋ぎ、体の健康のみならず、思い通りの幸せな人生へと転換していくための次世代ケア。<br>
+        このケアを本当に必要な方へ届けていくための新しい発信基地として<strong>「東京サロン」</strong>をOPENすることにしました！
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-section">
+  <div class="gallery-grid fade-in">
+    <img src="images/salon-lounge.png" alt="サロンラウンジ" loading="lazy">
+    <img src="images/salon-entrance.png" alt="サロンエントランス" loading="lazy">
+    <img src="images/salon-terrace.png" alt="テラス" loading="lazy">
+    <img src="images/salon-treatment.png" alt="施術ルーム" loading="lazy">
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section class="location-section">
+  <div class="container">
+    <p class="section-en fade-in" style="color:#c9a96e;">LOCATION</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in" style="color:#e8d5a3;">新たな拠点は「麻布・広尾」</h2>
+    <p class="fade-in" style="text-align:center; color:#c9a96e; font-size:0.85rem; letter-spacing:0.1em; margin-bottom:36px;">富士山からの気が流れる「龍脈」の通り道</p>
+    <div class="location-content fade-in">
+      <p>今回、新しいサロンをオープンするにあたり、私が「東京の麻布・広尾エリア」を選んだのには、現代人には思いもかけない、深く神秘的な理由があります。</p>
+      <p>「レイライン」という言葉をご存知でしょうか。古代の遺跡やパワースポットが、まるで妖精の道しるべのように一直線に繋がっているとする考え方です。日本でも、富士山と鹿島神宮を結ぶラインに様々なパワースポットが連なり、そこにスカイツリーも加わって、見渡す者に不思議で神秘的な感覚を与えてくれます。</p>
+      <p>徳川家康が江戸幕府を開いた際、関東全域の地相を調べ上げ、四方向に神様が宿る「四神相応」の考え方を根拠に江戸城の場所を定めたことは有名です。陰陽道において、江戸城を取り囲む「麻布・広尾・白金」などの台地は、周辺の「気」が集まり、土地が永く栄える中心地とされています。</p>
+      <p style="color:#e8d5a3; font-weight:500;">実を言うと、広尾界隈は、風水において非常に「気のよい土地」なのです。</p>
+      <p>風水では、大地の気は山の尾根を龍の姿のように渡っていくと考えられ、これを「龍脈」と呼びます。そして、その気が地上に噴き出す場所が「龍穴」です。日本の大地の強力なエネルギーは富士山から発せられ、その龍脈の一つが、まさにこの「広尾」の土地を力強く脈打ちながら通り、龍穴である皇居へと向かっていると言われています。</p>
+      <div class="location-highlight">
+        <p>つまり、この広尾のサロンは、ただの空間ではありません。</p>
+        <p style="font-size:1rem;">富士山から流れる力強い「大地の気」を直接受け取り、<br>心身のエネルギーを根本から調律し、<br>あなたの望む<strong>現実創造を爆発的に加速させる</strong>ための<br><strong>「光の拠点」</strong>なのです。</p>
+      </div>
+      <p class="location-cta-text">遠方からでも、この土地のエネルギーと交わりに来ていただく価値が十分にある。<br>そう確信して、この場所を選びました。</p>
+      <p style="text-align:center; color:#b0a890; font-size:0.9rem; margin-top:20px; line-height:2.2;">このような理由から、是非、皆さんにも、このサロンにお越しいただきたいと思い、<br>様々な特典がついたプランをご用意させていただきました。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECIAL SESSION ===== -->
+<section class="session-section">
+  <div class="container">
+    <p class="section-en fade-in">SPECIAL SESSION</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">期間限定で<br>「特別セッション」をさせて頂きます</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="session-box fade-in">
+      <div class="text-center">
+        <span class="session-badge">2027年2月までの期間限定</span>
+      </div>
+      <p>東京サロンでは、基本的には素晴らしいスタッフたちが皆さまのケアを担当し、私自身は講座開催をメインの活動としていきます。</p>
+      <p>ですが、この東京サロンの立ち上げにあたり、私の中で一つ決めたことがあります。</p>
+      <p>これまで私を信じ、共に歩んでくださった皆さまへ、最高の感謝とオープン記念の意を込めて。オープンから2027年2月までの期間限定ではありますが、私、<strong>橋本美紀による「特別セッション（施術付）」</strong>をさせて頂きます。</p>
+      <p>最近ではお届けすることがなくなった私の施術ですが、この特別な期間だけは、皆さまのエネルギーを直接調律し、新しい未来を描くお手伝いをしたいと思っています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEMBERSHIP PLANS ===== -->
+<section class="plans-section" id="plans">
+  <div class="container">
+    <p class="section-en fade-in">OPENING MEMBERSHIP</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">東京サロン<br>オープニング・メンバーシップ</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="plans-intro fade-in">
+      <p>この場所は、私一人の力ではなく、これまでご縁を紡いでくださった皆さまと共に、新しい奇跡を産み出していく場所にしたいと考えています。</p>
+      <p>共に新しいステージの幕開けを祝ってくださる皆さまへ、感謝と敬意を込めて、<br><strong>今しか受け取ることのできない「特別な体験」プラン</strong>をご用意させていただきました。</p>
+    </div>
+    <p class="plans-note fade-in">
+      ※ゴールドメンバー以上の皆さまには、大分・東京両サロンのスタッフ施術メニューを特別価格でご利用いただける<strong>「永久優待権」</strong>を付与いたします。<br>
+      （＊永久優待権は、大分・東京サロンの営業期間中のみ有効となります）
+    </p>
+
+    <!-- ===== DIAMOND (SOLD OUT) ===== -->
+    <div class="plan-card plan-diamond fade-in sold-out">
+      <div class="sold-out-banner"><span class="sold-out-badge">SOLD OUT</span><span>定員に達しました ― 募集終了</span><span class="sold-out-sub">たくさんのお申し込みありがとうございました</span></div>
+      <div class="plan-header">
+        <span class="plan-badge">限定 2名様</span>
+        <h3 class="plan-name">&#x1f48e; ダイヤモンドメンバー</h3>
+        <p class="plan-price-main">680,000<small>円（税込）</small></p>
+        <p class="plan-value">〈総額 約100万円相当の特典 ＋ 永久優待権〉</p>
+        <span class="plan-real-price">30万pt還元 → 実質 380,000円</span>
+      </div>
+      <div class="plan-body">
+        <p class="plan-benefits-title">BENEFITS</p>
+        <ul class="plan-benefits">
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">【最強の永久優待】施術メニュー 25%OFF</span><span class="benefit-sub">大分・東京両サロン（サロンスタッフ担当メニュー適応）<br>ご本人様＋ご同伴者1名様まで同じ割引でご利用可<br>ご家族であれば、事前登録でお一人でのご利用時も適応</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">橋本担当 特別セッション（施術付）全5回</span><span class="benefit-sub">東京・大分・福岡にて ／ GIFT Ticketへの交換も可能</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">SPASS ポイント 30万ポイント還元</span><span class="benefit-sub">東京・大分両サロンで、お好きなメニューに自由にご利用可</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 個人セッション（施術付）全3回</span><span class="benefit-sub">不参加の場合は遠隔へ振替</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート（全3回）参加費無料優待権</span><span class="benefit-sub">交通費・宿泊費除く</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">GIFT Ticket 5枚（1回 25,000円相当）</span><span class="benefit-sub">ご家族やお友達へプレゼント可（施術はスタッフ担当）</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">AMANE RESORT 宿泊優待（ペア1泊朝食付）</span></div></li>
+        </ul>
+      </div>
+      <div class="plan-cta">
+        <div class="plan-cta-row">
+          <a href="https://www.paypal.com/ncp/payment/MJTK3MSPBS5SY" target="_blank" class="cta-btn cta-btn-primary"><span class="cta-label">CREDIT CARD - LUMP SUM</span><span class="cta-main">カード一括払い</span></a>
+          <a href="https://buy.stripe.com/eVq3cvf5r8115jB5SN5Vu02" target="_blank" class="cta-btn cta-btn-secondary"><span class="cta-label">CREDIT CARD - INSTALLMENT</span><span class="cta-main">カード分割払い</span></a>
+        </div>
+        <button class="cta-btn cta-btn-bank" onclick="openBankModal('diamond')"><span class="cta-label">BANK TRANSFER</span><span class="cta-main"><span class="cta-icon">&#x1f3e6;</span>銀行振込でお申し込み</span></button>
+      </div>
+    </div>
+
+    <!-- ===== PLATINUM ===== -->
+    <div class="plan-card plan-platinum fade-in">
+      <div class="plan-header">
+        <span class="plan-badge">限定 5名様</span>
+        <h3 class="plan-name">&#x2728; プラチナメンバー</h3>
+        <p class="plan-price-main">396,000<small>円（税込）</small></p>
+        <p class="plan-value">〈総額 約60万円相当の特典 ＋ 永久優待権〉</p>
+        <span class="plan-real-price">18万pt還元 → 実質 216,000円</span>
+      </div>
+      <div class="plan-body">
+        <p class="plan-benefits-title">BENEFITS</p>
+        <ul class="plan-benefits">
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">【特別な永久優待】施術メニュー 20%OFF</span><span class="benefit-sub">大分・東京両サロン（サロンスタッフ担当メニュー適応）<br>ご本人様＋ご同伴者1名様まで同じ割引でご利用可<br>ご家族であれば、事前登録でお一人でのご利用時も適応</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">橋本担当 特別セッション（施術付）全3回</span><span class="benefit-sub">東京・大分・福岡にて ／ GIFT Ticketへの交換も可能</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">SPASS ポイント 18万ポイント還元</span><span class="benefit-sub">東京・大分両サロンでご利用可</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 個人セッション（施術付）全2回</span><span class="benefit-sub">不参加の場合は遠隔へ振替</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度「別府リトリート」参加費無料優待権</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 遠隔ヒーリング（全1回）</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">GIFT Ticket 3枚（1回 25,000円相当）</span><span class="benefit-sub">ご家族やお友達へプレゼント可（施術はスタッフ担当）</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">AMANE RESORT ランチ優待（ペアご招待）</span></div></li>
+        </ul>
+      </div>
+      <div class="plan-cta">
+        <div class="plan-cta-row">
+          <a href="https://www.paypal.com/ncp/payment/ZN5PQ35DWL2NE" target="_blank" class="cta-btn cta-btn-primary"><span class="cta-label">CREDIT CARD - LUMP SUM</span><span class="cta-main">カード一括払い</span></a>
+          <a href="https://buy.stripe.com/4gM6oH0axchhaDV0yt5Vu03" target="_blank" class="cta-btn cta-btn-secondary"><span class="cta-label">CREDIT CARD - INSTALLMENT</span><span class="cta-main">カード分割払い</span></a>
+        </div>
+        <button class="cta-btn cta-btn-bank" onclick="openBankModal('platinum')"><span class="cta-label">BANK TRANSFER</span><span class="cta-main"><span class="cta-icon">&#x1f3e6;</span>銀行振込でお申し込み</span></button>
+      </div>
+    </div>
+
+    <!-- ===== GOLD ===== -->
+    <div class="plan-card plan-gold fade-in">
+      <div class="plan-header">
+        <span class="plan-badge">GOLD MEMBER</span>
+        <h3 class="plan-name">&#x1f947; ゴールドメンバー</h3>
+        <p class="plan-price-main">198,000<small>円（税込）</small></p>
+        <p class="plan-value">〈総額 約35万円相当の特典 ＋ 永久優待権〉</p>
+        <span class="plan-real-price">10万pt還元 → 実質 98,000円</span>
+      </div>
+      <div class="plan-body">
+        <p class="plan-benefits-title">BENEFITS</p>
+        <ul class="plan-benefits">
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">【永久優待】施術メニュー 15%OFF</span><span class="benefit-sub">大分・東京両サロン（サロンスタッフ担当メニュー・ご本人様のみ適応）</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">橋本担当 特別セッション（施術付）全1回</span><span class="benefit-sub">東京・大分・福岡にて ／ GIFT Ticketへの交換も可能</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">SPASS ポイント 10万ポイント還元</span><span class="benefit-sub">東京・大分両サロンでご利用可</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度「別府リトリート」参加費無料優待権</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 個人セッション（施術付）全1回</span><span class="benefit-sub">不参加の場合は遠隔へ振替</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 遠隔ヒーリング（全2箇所分）</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">GIFT Ticket 2枚（1回 25,000円相当）</span><span class="benefit-sub">ご家族やお友達へプレゼント可（施術はスタッフ担当）</span></div></li>
+        </ul>
+      </div>
+      <div class="plan-cta">
+        <div class="plan-cta-row">
+          <a href="https://www.paypal.com/ncp/payment/D8GVB8WXEVPEC" target="_blank" class="cta-btn cta-btn-primary"><span class="cta-label">CREDIT CARD - LUMP SUM</span><span class="cta-main">カード一括払い</span></a>
+          <a href="https://buy.stripe.com/6oUdR91eB9559zR5SN5Vu04" target="_blank" class="cta-btn cta-btn-secondary"><span class="cta-label">CREDIT CARD - INSTALLMENT</span><span class="cta-main">カード分割払い</span></a>
+        </div>
+        <button class="cta-btn cta-btn-bank" onclick="openBankModal('gold')"><span class="cta-label">BANK TRANSFER</span><span class="cta-main"><span class="cta-icon">&#x1f3e6;</span>銀行振込でお申し込み</span></button>
+      </div>
+    </div>
+
+    <!-- ===== SILVER ===== -->
+    <div class="plan-card plan-silver fade-in">
+      <div class="plan-header">
+        <span class="plan-badge">SILVER MEMBER</span>
+        <h3 class="plan-name">&#x1f948; シルバーメンバー</h3>
+        <p class="plan-price-main">88,000<small>円（税込）</small></p>
+        <p class="plan-value">〈総額 約15万円相当の特典〉</p>
+        <span class="plan-real-price">5万pt還元 → 実質 38,000円</span>
+      </div>
+      <div class="plan-body">
+        <p class="plan-benefits-title">BENEFITS</p>
+        <ul class="plan-benefits">
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">SPASS ポイント 5万ポイント還元</span><span class="benefit-sub">東京・大分両サロンでご利用可</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">2026年度リトリート時 遠隔ヒーリング</span><span class="benefit-sub">国内2回 または 海外1回</span></div></li>
+          <li><span class="check">&#10003;</span><div><span class="benefit-main">GIFT Ticket 2枚（1回 25,000円相当）</span><span class="benefit-sub">ご家族やお友達へプレゼント可（施術はスタッフ担当）</span></div></li>
+        </ul>
+      </div>
+      <div class="plan-cta">
+        <div class="plan-cta-row">
+          <a href="https://www.paypal.com/ncp/payment/928GF6MJAYRJC" target="_blank" class="cta-btn cta-btn-primary"><span class="cta-label">CREDIT CARD - LUMP SUM</span><span class="cta-main">カード一括払い</span></a>
+          <a href="https://buy.stripe.com/cNi6oHf5r5STh2j6WR5Vu05" target="_blank" class="cta-btn cta-btn-secondary"><span class="cta-label">CREDIT CARD - INSTALLMENT</span><span class="cta-main">カード分割払い</span></a>
+        </div>
+        <button class="cta-btn cta-btn-bank" onclick="openBankModal('silver')"><span class="cta-label">BANK TRANSFER</span><span class="cta-main"><span class="cta-icon">&#x1f3e6;</span>銀行振込でお申し込み</span></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== COMPARISON TABLE ===== -->
+<section class="comparison-section">
+  <div class="container">
+    <p class="section-en fade-in">PLAN COMPARISON</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">プラン比較表</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="comparison-table-wrap fade-in">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="min-width:120px;">特典内容</th>
+            <th>&#x1f48e; ダイヤモンド<br><small>680,000円</small></th>
+            <th>&#x2728; プラチナ<br><small>396,000円</small></th>
+            <th>&#x1f947; ゴールド<br><small>198,000円</small></th>
+            <th>&#x1f948; シルバー<br><small>88,000円</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>永久優待割引</td><td><span class="check-mark">25%</span></td><td><span class="check-mark">20%</span></td><td><span class="check-mark">15%</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td>同伴者・家族登録</td><td><span class="check-mark">&#10003;</span></td><td><span class="check-mark">&#10003;</span></td><td><span class="dash">&#8212;</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td>橋本担当 特別セッション</td><td><span class="check-mark">5回</span></td><td><span class="check-mark">3回</span></td><td><span class="check-mark">1回</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td>SPASSポイント還元</td><td><span class="check-mark">30万pt</span></td><td><span class="check-mark">18万pt</span></td><td><span class="check-mark">10万pt</span></td><td><span class="check-mark">5万pt</span></td></tr>
+          <tr><td>リトリート参加費無料</td><td><span class="check-mark">全3回</span></td><td><span class="check-mark">別府1回</span></td><td><span class="check-mark">別府1回</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td>リトリート時 個人セッション</td><td><span class="check-mark">3回</span></td><td><span class="check-mark">2回</span></td><td><span class="check-mark">1回</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td>遠隔ヒーリング</td><td><span class="dash">&#8212;</span></td><td><span class="check-mark">1回</span></td><td><span class="check-mark">2箇所</span></td><td><span class="check-mark">国内2回</span></td></tr>
+          <tr><td>GIFT Ticket</td><td><span class="check-mark">5枚</span></td><td><span class="check-mark">3枚</span></td><td><span class="check-mark">2枚</span></td><td><span class="check-mark">2枚</span></td></tr>
+          <tr><td>AMANE RESORT 優待</td><td><span class="check-mark">宿泊</span></td><td><span class="check-mark">ランチ</span></td><td><span class="dash">&#8212;</span></td><td><span class="dash">&#8212;</span></td></tr>
+          <tr><td><strong>実質価格</strong></td><td><strong style="color:#c9a96e;">380,000円</strong></td><td><strong style="color:#c9a96e;">216,000円</strong></td><td><strong style="color:#c9a96e;">98,000円</strong></td><td><strong style="color:#c9a96e;">38,000円</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT ===== -->
+<section class="payment-section">
+  <div class="container">
+    <p class="section-en fade-in">PAYMENT</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">お支払い方法について</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="payment-box fade-in">
+      <p style="font-size:0.88rem; color:#666; margin-bottom:20px;">ご無理のない範囲でご参加いただけるよう、各種お支払い方法をご用意しております。</p>
+      <ul class="payment-methods">
+        <li><span class="num">1</span> 銀行振込（一括）</li>
+        <li><span class="num">2</span> クレジットカード決済（一括 / 分割払い可）</li>
+      </ul>
+
+      <!-- 一括払い説明 -->
+      <div class="payment-note">
+        <strong>&#9654; クレジットカード一括払いについて</strong><br>
+        以下のブランドがご利用いただけます。
+        <div class="payment-brands">
+          <span>VISA</span><span>Master</span><span>JCB</span><span>AMEX</span><span>Diners</span>
+        </div>
+      </div>
+
+      <!-- 分割払い説明 -->
+      <div class="payment-note-block">
+        <strong>&#9654; クレジットカード分割払いについて</strong><br>
+        カード会社のご契約条件によりますが、最大60回までの「分割払い」が可能です。<br><br>
+        <strong>【対象ブランド（分割払い）】</strong>
+        <div class="payment-brands">
+          <span>VISA</span><span>Master</span><span>JCB</span>
+        </div>
+        <p style="margin-top:8px; font-size:0.75rem;">※分割払いは日本国内発行のカードのみ対象です</p>
+        <p style="margin-top:8px;">決済画面にてクレジットカード番号をご入力いただくと、「分割払いが可能かどうか」および「選択可能な分割回数」が自動的に表示されます。高額プランをご検討の方も、月々のご負担を抑えてご参加いただけますので、ぜひご活用ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section">
+  <div class="container">
+    <p class="section-en fade-in">FAQ</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">よくあるご質問</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="faq-list fade-in">
+
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>SPASSポイントに有効期限はありますか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>ポイントの有効期限は「最終ご来店日から1年間」となります。つまり、大分・東京どちらかのサロンを年に1回でもご利用いただければ、実質無期限でずっとポイントを保持・ご利用いただけます。ご自身のペースで焦らずゆっくりと消化していただけますのでご安心ください。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>プラチナ・ダイヤモンドの「家族登録」とはどのようなものですか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>お申し込み後、事務局より「優待を適用されるご家族1名様」のお名前をお伺いいたします。ご登録いただいたご家族様は、メンバー様のご同伴がなくても、お一人でのご来店時にずっとメンバー優待価格（20〜25%OFF）でサロンをご利用いただける特別な権利です。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>橋本本人の特別セッションは、どこで受けられますか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>橋本が担当する特別セッション（施術付）は、東京・大分・福岡の3拠点にてスケジュールを調整し、ご案内させていただきます。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>GIFT Ticketは誰でも使えますか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>はい。GIFT Ticketはご家族やお友達へプレゼントしていただけます。施術はサロンスタッフが担当いたします。大切な方への特別な贈り物としてご活用ください。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>リトリートに参加できない場合はどうなりますか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>リトリート時の個人セッションについては、不参加の場合は遠隔セッションへ振替が可能です。遠方の方やスケジュールが合わない方もご安心ください。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>永久優待権はいつまで使えますか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>永久優待権は、大分・東京サロンの営業期間中であれば、ずっとご利用いただけます。ゴールドメンバー以上の方に付与される特別な権利です。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>分割払いは何回まで可能ですか？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>カード会社のご契約条件によりますが、最大60回までの分割払いが可能です。対象ブランドはVISA / Master / JCB（日本国内発行のカード）です。決済画面にて選択可能な分割回数が自動表示されます。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="q-mark">Q</span>
+          <span>一括払いで使えるクレジットカードブランドは？</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>一括払いの場合は、VISA / Master / JCB / AMEX / Diners の5ブランドがご利用いただけます。分割払いの場合は、VISA / Master / JCB（日本国内発行カード）のみが対象となります。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLOSING ===== -->
+<section class="closing-section">
+  <div class="container">
+    <p class="section-en fade-in">MESSAGE</p>
+    <div class="gold-line fade-in"></div>
+    <h2 class="section-title fade-in">最後に</h2>
+    <div class="section-subtitle fade-in"></div>
+    <div class="closing-content fade-in">
+      <p>私は、この東京サロンという場所が、私たちが手を取り合って新しい世界を創っていく「光の拠点」の一つになると確信しています。</p>
+      <div class="closing-highlight serif">
+        「新しいステージの幕開けを、一緒に祝いたい」<br>
+        「大切な家族やお友達に、極上の癒しをプレゼントしたい」
+      </div>
+      <p>そんな風に感じてくださる方は、ぜひオープニングメンバーとして、この喜びを共に分かち合えたら嬉しいです。皆さまと、最高の笑顔でお会いできることを心から楽しみにしています。</p>
+      <div class="closing-signature">
+        <p style="font-size:0.85rem; color:#b09060; margin-bottom:8px; line-height:1.8;">共に、新しいステージへ。<br>心からの感謝を込めて。</p>
+        <p class="name serif">橋本美紀</p>
+        <p class="role">ニューロライフLab. 代表</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta-section" id="apply">
+  <h2 class="serif">お申し込みはこちら</h2>
+  <p class="deadline">受付期間：2026年4月15日（水）23:59まで</p>
+
+  <div class="final-plan-group sold-out">
+    <p class="final-plan-title">&#x1f48e; ダイヤモンドメンバー</p>
+    <p class="final-plan-price">680,000円（税込）｜限定2名様</p>
+    <div class="final-cta-grid">
+      <div class="final-cta-row">
+        <a href="https://www.paypal.com/ncp/payment/MJTK3MSPBS5SY" target="_blank" class="final-plan-btn final-btn-lump"><span class="plan-label">カード一括払い</span><span class="plan-action">お申し込み</span></a>
+        <a href="https://buy.stripe.com/eVq3cvf5r8115jB5SN5Vu02" target="_blank" class="final-plan-btn final-btn-installment"><span class="plan-label">カード分割払い</span><span class="plan-action">お申し込み</span></a>
+      </div>
+      <button class="final-plan-btn final-btn-bank" onclick="openBankModal('diamond')"><span class="plan-label">銀行振込</span><span class="plan-action">お申し込み</span></button>
+    </div>
+    <div class="final-sold-out-msg">定員に達しました ― 募集終了</div>
+  </div>
+
+  <div class="final-plan-group">
+    <p class="final-plan-title">&#x2728; プラチナメンバー</p>
+    <p class="final-plan-price">396,000円（税込）｜限定5名様</p>
+    <div class="final-cta-grid">
+      <div class="final-cta-row">
+        <a href="https://www.paypal.com/ncp/payment/ZN5PQ35DWL2NE" target="_blank" class="final-plan-btn final-btn-lump"><span class="plan-label">カード一括払い</span><span class="plan-action">お申し込み</span></a>
+        <a href="https://buy.stripe.com/4gM6oH0axchhaDV0yt5Vu03" target="_blank" class="final-plan-btn final-btn-installment"><span class="plan-label">カード分割払い</span><span class="plan-action">お申し込み</span></a>
+      </div>
+      <button class="final-plan-btn final-btn-bank" onclick="openBankModal('platinum')"><span class="plan-label">銀行振込</span><span class="plan-action">お申し込み</span></button>
+    </div>
+  </div>
+
+  <div class="final-plan-group">
+    <p class="final-plan-title">&#x1f947; ゴールドメンバー</p>
+    <p class="final-plan-price">198,000円（税込）</p>
+    <div class="final-cta-grid">
+      <div class="final-cta-row">
+        <a href="https://www.paypal.com/ncp/payment/D8GVB8WXEVPEC" target="_blank" class="final-plan-btn final-btn-lump"><span class="plan-label">カード一括払い</span><span class="plan-action">お申し込み</span></a>
+        <a href="https://buy.stripe.com/6oUdR91eB9559zR5SN5Vu04" target="_blank" class="final-plan-btn final-btn-installment"><span class="plan-label">カード分割払い</span><span class="plan-action">お申し込み</span></a>
+      </div>
+      <button class="final-plan-btn final-btn-bank" onclick="openBankModal('gold')"><span class="plan-label">銀行振込</span><span class="plan-action">お申し込み</span></button>
+    </div>
+  </div>
+
+  <div class="final-plan-group" style="margin-bottom:0;">
+    <p class="final-plan-title">&#x1f948; シルバーメンバー</p>
+    <p class="final-plan-price">88,000円（税込）</p>
+    <div class="final-cta-grid">
+      <div class="final-cta-row">
+        <a href="https://www.paypal.com/ncp/payment/928GF6MJAYRJC" target="_blank" class="final-plan-btn final-btn-lump"><span class="plan-label">カード一括払い</span><span class="plan-action">お申し込み</span></a>
+        <a href="https://buy.stripe.com/cNi6oHf5r5STh2j6WR5Vu05" target="_blank" class="final-plan-btn final-btn-installment"><span class="plan-label">カード分割払い</span><span class="plan-action">お申し込み</span></a>
+      </div>
+      <button class="final-plan-btn final-btn-bank" onclick="openBankModal('silver')"><span class="plan-label">銀行振込</span><span class="plan-action">お申し込み</span></button>
+    </div>
+  </div>
+
+  <p class="final-note">※「限定数」のあるプランは、枠が埋まり次第、期間中であっても受付を終了させていただきます。あらかじめご了承ください。</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 ニューロライフLab. All Rights Reserved.</p>
+</footer>
+
+<!-- ===== FLOATING CTA ===== -->
+<div class="floating-cta" id="floatingCta">
+  <span class="floating-cta-text">4/15(水) 23:59まで</span>
+  <a href="#plans" class="floating-cta-btn">プランを見る</a>
+</div>
+
+<!-- ===== BANK TRANSFER MODAL ===== -->
+<div class="modal-overlay" id="bankModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeBankModal()">&times;</button>
+    <h3 class="modal-title serif">銀行振込でのお申し込み</h3>
+    <p class="modal-plan-name" id="modalPlanName"></p>
+    <div class="modal-amount">
+      <span class="amount-label">お振込金額</span>
+      <p class="amount-value" id="modalAmount"></p>
+    </div>
+    <div class="bank-info">
+      <div class="bank-info-row"><span class="bank-label">銀行名</span><span class="bank-value">GMOあおぞらネット銀行</span></div>
+      <div class="bank-info-row"><span class="bank-label">支店名</span><span class="bank-value">法人第二営業部</span></div>
+      <div class="bank-info-row"><span class="bank-label">口座種別</span><span class="bank-value">普通</span></div>
+      <div class="bank-info-row"><span class="bank-label">口座番号</span><span class="bank-value">1702258</span></div>
+      <div class="bank-info-row"><span class="bank-label">振込先名義</span><span class="bank-value">有限会社 アスール</span></div>
+    </div>
+    <p class="modal-note">※お振込後、事務局よりご連絡させていただきます。<br>※振込手数料はお客様のご負担となります。</p>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// Countdown Timer
+const deadline = new Date('2026-04-15T23:59:59+09:00').getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const diff = deadline - now;
+
+  if (diff <= 0) {
+    document.getElementById('countdown').innerHTML = '<p class="countdown-expired">受付期間は終了しました（※閲覧用ページ）</p>';
+    // Preview mode: overlay disabled
+    // document.getElementById('expiredOverlay').classList.add('active');
+    // document.body.style.overflow = 'hidden';
+    // Keep floating CTA visible for preview
+    return;
+  }
+
+  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+  document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+  document.getElementById('cd-min').textContent = String(m).padStart(2, '0');
+  document.getElementById('cd-sec').textContent = String(s).padStart(2, '0');
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Floating CTA
+window.addEventListener('scroll', () => {
+  const floatingCta = document.getElementById('floatingCta');
+  const plansSection = document.getElementById('plans');
+  const plansTop = plansSection.offsetTop;
+  const scrollY = window.scrollY;
+
+  if (scrollY > 500 && scrollY < plansTop - 200) {
+    floatingCta.classList.add('show');
+  } else {
+    floatingCta.classList.remove('show');
+  }
+});
+
+// FAQ Toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+
+// Bank Transfer Modal
+const planData = {
+  diamond: { name: '💎 ダイヤモンドメンバー', amount: '680,000円' },
+  platinum: { name: '✨ プラチナメンバー', amount: '396,000円' },
+  gold: { name: '🥇 ゴールドメンバー', amount: '198,000円' },
+  silver: { name: '🥈 シルバーメンバー', amount: '88,000円' }
+};
+
+function openBankModal(plan) {
+  const data = planData[plan];
+  document.getElementById('modalPlanName').textContent = data.name;
+  document.getElementById('modalAmount').textContent = data.amount;
+  document.getElementById('bankModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBankModal() {
+  document.getElementById('bankModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close modal on overlay click
+document.getElementById('bankModal').addEventListener('click', function(e) {
+  if (e.target === this) closeBankModal();
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeBankModal();
+});
+</script>
+
+</body>
+</html>
